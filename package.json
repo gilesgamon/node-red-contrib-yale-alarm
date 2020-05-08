@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-yale-alarm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Integration to Yale Alarm System. This (1st) release just does basic get/set but planning to provide richer set in next version",
   "main": "index.js",
   "directories": {
@@ -12,12 +12,27 @@
   "keywords": [
     "yale",
     "alarm",
+    "node-red",
     "smartthings"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilesgamon/node-red-contrib-yale-alarm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gilesgamon/node-red-contrib-yale-alarm/issues"
+  },
+  "homepage": "https://github.com/gilesgamon/node-red-contrib-yale-alarm",
   "author": {
     "name": "Giles Gamon",
     "email": "giles@lsiarchi.consulting"
   },
+  "contributors": [
+    {
+      "name": "Giles Gamon",
+      "email": "giles@lsiarchi.consulting"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "yalesyncalarm": "^2.0.4",
@@ -29,5 +44,6 @@
       "yale-getStatus": "yale-alarm/yale-getStatus.js",
       "yale-setStatus": "yale-alarm/yale-setStatus.js"
     }
-  }
+  },
+  "deprecated": false
 }
