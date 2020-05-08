@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    RED.nodes.registerType('yale-config', {
+        category: 'config',
+        credentials: {
+            email: {value: "", type: "text"},
+            password: {type: "password"}
+        },
+        defaults: {
+            name: {value: "", type: "text", required: false}
+        },
+        label: function() {
+            return this.name;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="yale-config">
+    <div class="form-row">
+        <label for="node-config-input-yaleConfig"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-config-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-yaleConfig"><i class="icon-tag"></i> Yale Account</label>
+        <input type="text" id="node-config-input-email" placeholder="i.e. Email address">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-yaleConfig"><i class="icon-tag"></i> Password</label>
+        <input type="password" id="node-config-input-password" placeholder="secret">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="yale-config">
+    <p>A node that can retrieve data and send commands to a Yale Alarm account - linked to a smart alarm.</p>
+    <h2>Input:</h2>
+    <p>We need a username/password and will use those to obtain a token so we can communicate with the API</p>
+    <p>The API is not formally published/supported</p>
+</script>

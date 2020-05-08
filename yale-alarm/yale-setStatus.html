@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('set-state', {
+        category: 'Yale Alarm',
+        color: '#FFDE1E',
+        defaults: {
+            yaleConfig: {value: "", type: "yale-config"},
+            name: {value: ""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "icons/yale.png",
+        label: function () {
+            return this.name || "set state";
+        }
+    });
+
+</script>
+
+<script type="text/x-red" data-template-name="set-state">
+    <div class="form-row">
+        <label for="node-input-yaleConfig"><i class="icon-tag"></i> Yale Account</label>
+        <input type="text" id="node-input-yaleConfig" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="set-state">
+    <p>A node that can retrieve data and send commands to a Yale Alarm account - linked to a smart alarm.</p>
+    <h2>Input:</h2>
+    <p>We need a username/password and will use those to obtain a token so we can communicate with the API</p>
+    <p>The API is not formally published/supported</p>
+</script>
