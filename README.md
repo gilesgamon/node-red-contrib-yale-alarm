@@ -1,3 +1,5 @@
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MBAQ88WXKP2E2)
+
 Simple integration between Yale Alarm (API) and Node-RED.
 
 I'm doing this 'cos I have that kit and there is no internal warning system if people enter house/go down while alarm is fully/partially set. So we get false alarms. I can see various othre useful use cases (especially with extendend fucntionality) - did I leave any windows open or am I trying to leave home with windows open? It is possible to check that out now but it requires and active role of the user - not an automation: trying to set alarm while windows are open should be actively flagged to the user.
