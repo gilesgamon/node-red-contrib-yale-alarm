@@ -11,3 +11,5 @@ The Yale API is not officially published/supported and in theory might change wi
 This initial release is just to do basic get & set functions.
 
 There's a richer set of get contact/door etc capabilities to be provided in a future update.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MBAQ88WXKP2E2)
