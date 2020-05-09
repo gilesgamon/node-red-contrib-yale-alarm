@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-yale-alarm",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Integration to Yale Alarm System. This (1st) release just does basic get/set but planning to provide richer set in next version",
   "main": "index.js",
   "directories": {
@@ -41,8 +41,8 @@
   "node-red": {
     "nodes": {
       "yale-config": "yale-alarm/yale-config.js",
-      "yale-getStatus": "yale-alarm/yale-getStatus.js",
-      "yale-setStatus": "yale-alarm/yale-setStatus.js"
+      "yale-getstatus": "yale-alarm/yale-getstatus.js",
+      "yale-setstatus": "yale-alarm/yale-setstatus.js"
     }
   },
   "deprecated": false
