@@ -9,7 +9,6 @@ module.exports = function (RED) {
         if (this.yaleConfig) {
             const node = this;
             node.on('input', async (msg, send, done) => {
-                node.warn(`input : ${JSON.stringify(msg.payload.state)}, output: null`);
                 yalealarm.setStatus(node.yaleConfig.access_token, msg.payload.state)
                 .then(alarmStatus => {
                     let msg = {

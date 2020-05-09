@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-yale-alarm",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Integration to Yale Alarm System. This (1st) release just does basic get/set but planning to provide richer set in next version",
   "main": "index.js",
   "directories": {
